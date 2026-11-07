@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+.sect10 {
+    width: 100vw;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+    overflow: hidden;
+
+    .sect10_all {
+        width: 100vw;
+        height: 33vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .sect10_header {
+            width: 77.08vw;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .sect10_title {
+                font-size: 2.22rem;
+                font-weight: 600;
+                line-height: 120%;
+                color: #282739;
+                text-transform: uppercase;
+                font-family: "Jost", sans-serif;
+            }
+        }
+
+        .sect10_slider {
+            width: 100vw;
+            height: 27vw;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            overflow: hidden;
+
+            .sect10_btn_next {
+                position: absolute;
+                left: 60.5vw;
+                top: 11.5vw;
+                z-index: 10;
+                width: 3.33vw;
+                height: 3.33vw;
+                background-color: #6F73EE;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow: 0 4px 15px rgba(111, 115, 238, 0.45);
+                transition: transform 0.2s ease, background-color 0.2s ease;
+
+                img {
+                    width: 0.83vw;
+                    height: 1.1vw;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    background-color: #5d61db;
+                }
+
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+
+            .sect10_track {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 2.08vw;
+                transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+                will-change: transform;
+
+                .sect10_card {
+                    width: 24.3vw;
+                    height: 26vw;
+                    background-color: #F4F7FB;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    flex-shrink: 0;
+
+                    .sect10_card_img_box {
+                        width: 100%;
+                        height: 13.5vw;
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .sect10_card_img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .sect10_card_content_box {
+                        width: 100%;
+                        height: 12.5vw;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .sect10_card_info {
+                            width: 20.97vw;
+                            height: 9.72vw;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+
+                            .sect10_card_texts {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 0.69vw;
+
+                                .sect10_card_title {
+                                    font-size: 1.15rem;
+                                    font-weight: 600;
+                                    line-height: 130%;
+                                    color: #282739;
+                                    font-family: "Jost", sans-serif;
+                                }
+
+                                .sect10_card_desc {
+                                    font-size: 0.88rem;
+                                    font-weight: 400;
+                                    line-height: 140%;
+                                    color: #5D6C7B;
+                                    font-family: "Jost", sans-serif;
+                                }
+                            }
+
+                            .sect10_card_meta {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 1.39vw;
+
+                                .sect10_meta_item {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    gap: 0.42vw;
+
+                                    img {
+                                        width: 0.97vw;
+                                        height: 0.97vw;
+                                    }
+
+                                    p {
+                                        font-size: 0.83rem;
+                                        font-weight: 400;
+                                        color: #5D6C7B;
+                                        font-family: "Jost", sans-serif;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

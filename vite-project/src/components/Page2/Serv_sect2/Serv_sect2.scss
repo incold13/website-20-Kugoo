@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+.serv2 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .serv2_spacer_top {
+        height: 6vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .serv2_spacer_bottom {
+        height: 6vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .serv2_all {
+        width: 77.08vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4.5vw;
+
+        .serv2_header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .serv2_title {
+                font-size: 2.22rem;
+                font-weight: 600;
+                line-height: 125%;
+                color: #282739;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: "Jost", sans-serif;
+            }
+        }
+
+        .serv2_main {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .serv2_col_left {
+                width: 22vw;
+                height: 25vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+                text-align: right;
+
+                .serv2_item_left {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.6vw;
+
+                    .serv2_item_title {
+                        font-size: 1.25rem;
+                        font-weight: 700;
+                        line-height: 120%;
+                        color: #282739;
+                        text-transform: uppercase;
+                        font-family: "Jost", sans-serif;
+                    }
+
+                    .serv2_item_desc {
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                        line-height: 140%;
+                        color: #5D6C7B;
+                        font-family: "Jost", sans-serif;
+                    }
+                }
+            }
+
+            .serv2_center {
+                width: 27vw;
+                height: 27vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .serv2_circle_wrap {
+                    width: 26vw;
+                    height: 26vw;
+                    border-radius: 50%;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0 0 0 10px rgba(111, 115, 238, 0.08);
+
+                    .serv2_circle_img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .serv2_play_btn {
+                        position: absolute;
+                        width: 4.5vw;
+                        height: 4.5vw;
+                        background-color: #FFFFFF;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+                        transition: transform 0.2s ease;
+
+                        svg {
+                            transform: translateX(1.5px);
+                        }
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+
+                        &:active {
+                            transform: scale(0.95);
+                        }
+                    }
+                }
+            }
+
+            .serv2_col_right {
+                width: 22vw;
+                height: 25vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                text-align: left;
+
+                .serv2_item_right {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.6vw;
+
+                    .serv2_item_title {
+                        font-size: 1.11rem;
+                        font-weight: 700;
+                        line-height: 120%;
+                        color: #282739;
+                        text-transform: uppercase;
+                        font-family: "Jost", sans-serif;
+                    }
+
+                    .serv2_item_desc {
+                        font-size: 0.83rem;
+                        width: 19vw;
+                        font-weight: 400;
+                        line-height: 140%;
+                        color: #5D6C7B;
+                        font-family: "Jost", sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}

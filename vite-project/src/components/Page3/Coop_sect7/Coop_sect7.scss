@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.coop7 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .coop7_spacer_top {
+        height: 3vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .coop7_spacer_bottom {
+        height: 5vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .coop7_all {
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .coop7_banner {
+            width: 95vw;
+            height: 34vw;
+            border-radius: 12px;
+            background-color: #6F73EE;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .coop7_spacer_left {
+                width: 4.5vw;
+                height: 100%;
+                flex-shrink: 0;
+            }
+
+            .coop7_spacer_right {
+                width: 4.5vw;
+                height: 100%;
+                flex-shrink: 0;
+            }
+
+            .coop7_content {
+                width: 77vw;
+                height: 28vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .coop7_left {
+                    width: 50vw;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5vw;
+
+                    .coop7_badge {
+                        width: 6.8vw;
+                        height: 1.9vw;
+                        border-radius: 4px;
+                        background-color: #75D14A;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 0.85rem;
+                        font-weight: 500;
+                        color: #FFFFFF;
+                    }
+
+                    .coop7_titles {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.8vw;
+
+                        .coop7_title {
+                            font-size: 2.3rem;
+                            font-weight: 600;
+                            line-height: 120%;
+                            color: #FFFFFF;
+                            text-transform: uppercase;
+                        }
+
+                        .coop7_subtitle {
+                            font-size: 1.15rem;
+                            font-weight: 400;
+                            line-height: 140%;
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    .coop7_list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.8vw;
+
+                        .coop7_list_item {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 0.8vw;
+
+                            .coop7_check_box {
+                                width: 1.4vw;
+                                height: 1.4vw;
+                                flex-shrink: 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+
+                            .coop7_item_text {
+                                font-size: 1.05rem;
+                                font-weight: 400;
+                                line-height: 130%;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+
+                .coop7_right {
+                    width: 28vw;
+                    height: 28vw;
+                    border: 1px solid rgba(255, 255, 255, 0.4);
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1.4vw;
+
+                    .coop7_card_titles {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0.6vw;
+
+                        .coop7_card_title {
+                            font-size: 1.35rem;
+                            font-weight: 600;
+                            line-height: 125%;
+                            color: #FFFFFF;
+                            text-align: center;
+                            text-transform: uppercase;
+                        }
+
+                        .coop7_card_subtitle {
+                            font-size: 0.95rem;
+                            font-weight: 400;
+                            line-height: 135%;
+                            color: rgba(255, 255, 255, 0.9);
+                            text-align: center;
+                        }
+                    }
+
+                    .coop7_form {
+                        width: 23vw;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.9vw;
+
+                        .coop7_input {
+                            width: 23vw;
+                            height: 3.6vw;
+                            border-radius: 6px;
+                            border: none;
+                            outline: none;
+                            background-color: rgba(255, 255, 255, 0.25);
+                            color: #FFFFFF;
+                            font-size: 1.05rem;
+                            font-family: "Jost", sans-serif;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+
+                            &::placeholder {
+                                color: rgba(255, 255, 255, 0.8);
+                            }
+                        }
+
+                        .coop7_btn {
+                            width: 23vw;
+                            height: 3.6vw;
+                            border-radius: 6px;
+                            background-color: #FFFFFF;
+                            color: #6F73EE;
+                            font-size: 1.05rem;
+                            font-weight: 600;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+
+                    .coop7_agree_row {
+                        width: 23vw;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 0.6vw;
+
+                        .coop7_agree_box {
+                            width: 1.1vw;
+                            height: 1.1vw;
+                            flex-shrink: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        .coop7_agree_text {
+                            font-size: 0.72rem;
+                            line-height: 130%;
+                            color: rgba(255, 255, 255, 0.85);
+
+                            .coop7_agree_link {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

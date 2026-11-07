@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.serv6 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .serv6_spacer_top {
+        height: 5vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .serv6_spacer_bottom {
+        height: 6vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .serv6_all {
+        width: 77.08vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .serv6_content {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .serv6_info {
+                width: 36vw;
+                display: flex;
+                flex-direction: column;
+                gap: 1.6vw;
+
+                .serv6_titles {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.6vw;
+
+                    .serv6_title {
+                        font-size: 2.22rem;
+                        font-weight: 700;
+                        line-height: 120%;
+                        color: #282739;
+                        text-transform: uppercase;
+                        font-family: "Jost", sans-serif;
+                    }
+
+                    .serv6_subtitle {
+                        font-size: 1rem;
+                        font-weight: 400;
+                        color: #282739;
+                        font-family: "Jost", sans-serif;
+                    }
+                }
+
+                .serv6_desc {
+                    font-size: 0.85rem;
+                    width: 27vw;
+                    font-weight: 400;
+                    line-height: 145%;
+                    color: #282739;
+                    font-family: "Jost", sans-serif;
+                }
+
+                .serv6_tuning_block {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.8vw;
+
+                    .serv6_tuning_title {
+                        font-size: 0.95rem;
+                        font-weight: 600;
+                        color: #282739;
+                        font-family: "Jost", sans-serif;
+                    }
+
+                    .serv6_tuning_list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.75vw;
+
+                        .serv6_tuning_item {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 0.7vw;
+
+                            .serv6_check_wrap {
+                                width: 1.25vw;
+                                height: 1.25vw;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                flex-shrink: 0;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+
+                            .serv6_tuning_text {
+                                font-size: 0.85rem;
+                                font-weight: 400;
+                                line-height: 130%;
+                                color: #282739;
+                                font-family: "Jost", sans-serif;
+                            }
+                        }
+                    }
+                }
+
+                .serv6_link_text {
+                    font-size: 0.85rem;
+                    font-weight: 400;
+                    color: #282739;
+                    font-family: "Jost", sans-serif;
+
+                    .serv6_article_link {
+                        color: #6F73EE;
+                        transition: opacity 0.2s ease;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+
+            .serv6_image_box {
+                width: 38.5vw;
+                height: 33vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .serv6_scooter_img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

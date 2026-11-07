@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+.sect7 {
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+
+    .sect7_all {
+        width: 95.08vw;
+        height: 40.37vw;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .sect7_img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .sect7_play_btn {
+            position: relative;
+            z-index: 2;
+            width: 5.83vw;
+            height: 5.83vw;
+            background-color: #FFFFFF;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+
+            &:hover {
+                transform: scale(1.08);
+            }
+
+            .sect7_play_icon {
+                width: 1.15vw;
+                height: 1.35vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

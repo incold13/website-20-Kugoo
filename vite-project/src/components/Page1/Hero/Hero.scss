@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+// font-family: "Jost", sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+.hero {
+    width: 100vw;
+    min-height: 43.96vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Jost", sans-serif;
+    p {
+        white-space: nowrap;
+    }
+    .hero_all {
+        width: 95.83vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.08vw;
+        .hero_banner {
+            width: 100%;
+            height: 29.24vw;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            background: radial-gradient(ellipse 58.89vw 165.76vw at 72.01vw 18.19vw, #A6A9FF, #6F73EE);
+            .hero_kirin {
+                position: absolute;
+                left: 37.71vw;
+                top: 8.79vw;
+                font-size: 20.36vw;
+                font-weight: 700;
+                color: transparent;
+                -webkit-text-stroke: 1px #FFFFFF;
+                opacity: 0.23;
+                text-transform: uppercase;
+            }
+            .hero_glow,
+            .hero_photo {
+                position: absolute;
+                width: 37.36vw;
+                height: 28.13vw;
+            }
+            .hero_glow {
+                left: 61.11vw;
+                top: 7.36vw;
+                opacity: 0.5;
+                filter: blur(3.47vw);
+            }
+            .hero_photo {
+                left: 56.25vw;
+                top: 1.11vw;
+            }
+            .hero_text {
+                position: absolute;
+                left: 9.38vw;
+                top: 2.71vw;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2.5vw;
+                .hero_badge {
+                    width: 5.14vw;
+                    height: 1.88vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #FFFFFF;
+                    border-radius: 5px;
+                    font-size: 1.02rem;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                }
+                .hero_body {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3.19vw;
+                    .hero_group {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 1.74vw;
+                        .hero_head {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.49vw;
+                            .hero_title {
+                                font-size: 2.55rem;
+                                font-weight: 600;
+                                color: #FFFFFF;
+                                text-transform: uppercase;
+                            }
+                            .hero_sub {
+                                font-size: 1.46rem;
+                                font-weight: 400;
+                                color: #FFFFFF;
+                            }
+                        }
+                        .hero_btn {
+                            width: 12.29vw;
+                            height: 3.68vw;
+                            border-radius: 5px;
+                            background: #FFFFFF;
+                            font-size: 1.17rem;
+                            font-weight: 400;
+                            color: #6F73EE;
+                        }
+                    }
+                    .hero_pager {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.9vw;
+                        .hero_arrow {
+                            width: 1.81vw;
+                            height: 1.81vw;
+                            cursor: pointer;
+                        }
+                        .hero_num {
+                            font-size: 1.17rem;
+                            font-weight: 400;
+                            color: #FFFFFF;
+                        }
+                        .hero_line {
+                            position: relative;
+                            width: 2.36vw;
+                            height: 2px;
+                            border-radius: 2px;
+                            background: #8E91F2;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 1.04vw;
+                                height: 100%;
+                                border-radius: 2px;
+                                background: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            .hero_float {
+                position: absolute;
+                left: 44.38vw;
+                top: 17.92vw;
+                width: 21.88vw;
+                height: 4.51vw;
+                .hero_pill {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 14.38vw;
+                    height: 3.19vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.69vw;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    border-radius: 5px;
+                    background: rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(5px);
+                    .hero_bolt {
+                        width: 1.53vw;
+                        height: 1.53vw;
+                    }
+                    .hero_pill_text {
+                        font-size: 1.02rem;
+                        font-weight: 500;
+                        color: #FFFFFF;
+                    }
+                }
+                .hero_free {
+                    position: absolute;
+                    left: 6.74vw;
+                    top: 2.71vw;
+                    width: 6.46vw;
+                    height: 1.81vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+                    background: #FFFFFF;
+                    font-size: 0.88rem;
+                    font-weight: 500;
+                    color: #6F73EE;
+                    text-transform: uppercase;
+                }
+                .hero_dash {
+                    position: absolute;
+                    left: 14.31vw;
+                    top: 1.6vw;
+                    width: 6.67vw;
+                    border-top: 1.2px dashed #FFFFFF;
+                    transform-origin: left center;
+                    transform: rotate(2.4deg);
+                }
+                .hero_dot {
+                    position: absolute;
+                    width: 1.11vw;
+                    height: 1.11vw;
+                    border: 3px solid #FFFFFF;
+                    border-radius: 50%;
+                    background: #6F73EE;
+                }
+                .hero_dot_a {
+                    left: 13.75vw;
+                    top: 1.04vw;
+                }
+                .hero_dot_b {
+                    left: 20.76vw;
+                    top: 1.32vw;
+                }
+            }
+        }
+        .hero_stats {
+            width: 77.08vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .hero_cols {
+                display: flex;
+                .hero_stat {
+                    width: 19.79vw;
+                    .hero_stat_name {
+                        font-size: 1.82rem;
+                        font-weight: 600;
+                        color: #282739;
+                        text-transform: uppercase;
+                    }
+                    .hero_stat_desc {
+                        font-size: 1.17rem;
+                        font-weight: 400;
+                        color: #282739;
+                    }
+                }
+            }
+            .hero_rating {
+                width: 13.19vw;
+                height: 5.28vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid rgba(93, 108, 123, 0.1);
+                border-radius: 5px;
+                background: #FFFFFF;
+                .hero_rating_in {
+                    width: 11.81vw;
+                    display: flex;
+                    align-items: center;
+                    gap: 1.25vw;
+                    .hero_rating_icon {
+                        width: 3.89vw;
+                        height: 3.89vw;
+                        box-shadow: 0 0.6vw 0.8vw -0.3vw rgba(252, 63, 29, 0.5);
+                    }
+                    .hero_rating_label {
+                        font-size: 0.88rem;
+                        font-weight: 400;
+                        color: #5D6C7B;
+                    }
+                    .hero_rating_row {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.35vw;
+                        .hero_star {
+                            width: 0.97vw;
+                            height: 0.97vw;
+                            background: #FFD12E;
+                            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+                        }
+                        .hero_rating_num {
+                            font-size: 1.82rem;
+                            font-weight: 600;
+                            color: #282739;
+                        }
+                    }
+                }
+            }
+        }
+        .hero_end {
+            width: 100%;
+            height: 0.83vw;
+        }
+    }
+}

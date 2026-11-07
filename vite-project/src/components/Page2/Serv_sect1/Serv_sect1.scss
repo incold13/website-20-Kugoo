@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+.serv1 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .serv1_spacer_top {
+        height: 2.5vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .serv1_spacer_bottom {
+        height: 3vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .serv1_all {
+        width: 95.08vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .serv1_banner {
+            width: 100%;
+            height: 25.5vw;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            background-color: #F8B124;
+            display: flex;
+            align-items: center;
+
+            .serv1_bg_img {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: right center;
+                pointer-events: none;
+            }
+
+            .serv1_content {
+                position: relative;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+                .serv1_left {
+                    width: 78vw;
+                    height: 17vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .serv1_titles {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.8vw;
+
+                        .serv1_title {
+                            font-size: 2.22rem;
+                            font-weight: 700;
+                            line-height: 120%;
+                            color: #FFFFFF;
+                            text-transform: uppercase;
+                            font-family: "Jost", sans-serif;
+                        }
+
+                        .serv1_subtitle {
+                            font-size: 1.25rem;
+                            font-weight: 400;
+                            color: #FFFFFF;
+                            opacity: 0.95;
+                            font-family: "Jost", sans-serif;
+                        }
+                    }
+
+                    .serv1_features {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 1.2vw;
+
+                        .serv1_feature_item {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 0.6vw;
+
+                            .serv1_feat_icon_box {
+                                width: 2.2vw;
+                                height: 2.2vw;
+                                border-radius: 6px;
+                                background-color: rgba(255, 255, 255, 0.35);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                flex-shrink: 0;
+
+                                svg {
+                                    width: 1.2vw;
+                                    height: 1.2vw;
+                                }
+                            }
+
+                            .serv1_feat_text {
+                                font-size: 0.875rem;
+                                font-weight: 400;
+                                line-height: 130%;
+                                color: #FFFFFF;
+                                font-family: "Jost", sans-serif;
+                            }
+                        }
+                    }
+
+                    .serv1_btn {
+                        width: 9.8vw;
+                        height: 3vw;
+                        background-color: #FFFFFF;
+                        border-radius: 6px;
+                        color: #EFA924;
+                        font-family: "Jost", sans-serif;
+                        font-weight: 500;
+                        font-size: 0.95rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                        transition: transform 0.2s ease, opacity 0.2s ease;
+
+                        &:hover {
+                            transform: translateY(-2px);
+                            opacity: 0.95;
+                        }
+
+                        &:active {
+                            transform: translateY(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

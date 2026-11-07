@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+.sect11 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .sect11_spacer_top {
+        height: 5.56vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .sect11_spacer_bottom {
+        height: 6.94vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .sect11_all {
+        width: 77.08vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.89vw;
+
+        .sect11_header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .sect11_title {
+                font-size: 2.22rem;
+                font-weight: 600;
+                line-height: 125%;
+                color: #282739;
+                text-transform: uppercase;
+                font-family: "Jost", sans-serif;
+            }
+        }
+
+        .sect11_list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .sect11_item {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid #EAEAF0;
+
+                .sect11_item_header {
+                    width: 100%;
+                    min-height: 5.2vw;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    user-select: none;
+
+                    .sect11_item_question {
+                        width: 65vw;
+                        font-size: 1.11rem;
+                        font-weight: 500;
+                        line-height: 135%;
+                        color: #282739;
+                        font-family: "Jost", sans-serif;
+                    }
+
+                    .sect11_icon {
+                        width: 1.25vw;
+                        height: 1.25vw;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+                        flex-shrink: 0;
+
+                        .sect11_icon_line1 {
+                            position: absolute;
+                            width: 100%;
+                            height: 1.5px;
+                            background-color: #282739;
+                            border-radius: 1px;
+                        }
+
+                        .sect11_icon_line2 {
+                            position: absolute;
+                            width: 1.5px;
+                            height: 100%;
+                            background-color: #282739;
+                            border-radius: 1px;
+                        }
+
+                        &.sect11_icon_open {
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+
+                .sect11_item_body {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .sect11_body_spacer {
+                        height: 0.83vw;
+                        width: 100%;
+                        flex-shrink: 0;
+                    }
+
+                    .sect11_body_spacer_bottom {
+                        height: 2.22vw;
+                        width: 100%;
+                        flex-shrink: 0;
+                    }
+
+                    .sect11_body_texts {
+                        width: 65vw;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.11vw;
+
+                        .sect11_answer_p {
+                            font-size: 0.88rem;
+                            font-weight: 400;
+                            line-height: 155%;
+                            color: #282739;
+                            font-family: "Jost", sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

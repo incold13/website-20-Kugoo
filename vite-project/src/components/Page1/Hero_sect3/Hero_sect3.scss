@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+// font-family: "Jost", sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+.sect3 {
+    width: 100vw;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .sect3_all {
+        width: 93.08vw;
+        display: flex;
+        flex-direction: column;
+        gap: 4.17vw;
+        .sect3_cards {
+            width: 100%;
+            gap: 3vw;
+            display: flex;
+            justify-content: center;
+            .sect3_card {
+                width: 37.5vw; 
+                height: 16.32vw;
+                position: relative;
+                border-radius: 10px;
+                overflow: hidden;
+                .sect3_card_text {
+                    position: absolute;
+                    left: 2.78vw;
+                    top: 2.22vw; 
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.9vw;
+                    .sect3_card_title {
+                        font-size: 1.67rem;
+                        font-weight: 700;
+                        line-height: 1.2;
+                        color: #282739;
+                        text-transform: uppercase;
+                        font-family: "Jost", sans-serif;
+                    }
+                    .sect3_card_desc {
+                        width: 17.92vw;
+                        font-size: 1.11rem;
+                        font-weight: 500;
+                        line-height: 1.4;
+                        color: #282739;
+                    }
+                    .sect3_card_link {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.56vw; 
+                        text-decoration: none;
+                        margin-top: 0.56vw;
+                        p {
+                            font-size: 1.11rem;
+                            font-weight: 400;
+                            color: #6F73EE;
+                        }
+                        .sect3_card_arrow {
+                            width: 0.76vw;
+                        }
+                    }
+                }
+                .sect3_card_img {
+                    position: absolute;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+                .sect3_card_img1 {
+                    right: -2.43vw;
+                    top: -2.43vw;
+                    height: 18.6vw;
+                }
+                .sect3_card_img2 {
+                    right: 1.67vw;
+                    width: 15.54vw;
+                    height: 16.39vw;
+                }
+            }
+            .sect3_card_gray {
+                background: #F4F7FB;
+            }
+            .sect3_card_purple {
+                background: #F4F7FB;
+                &::before {
+                    position: absolute;
+                    right: -4.65vw;
+                    top: -10.63vw;
+                    width: 30.97vw;
+                    height: 30.97vw;
+                    border-radius: 50%;
+                    background: #6F73EE;
+                }
+            }
+        }
+        .sect3_banner {
+            width: 100%;
+            height: 29.24vw; 
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            background: radial-gradient(ellipse 80% 140% at 65% 55%, #595A62, #3B3E46);
+            .sect3_banner_img {
+                width: 63.5vw;
+            }
+            .sect3_banner_text {
+                position: absolute;
+                left: 53.26vw;
+                top: 4.65vw; 
+                width: 30.63vw; 
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.46vw; 
+                .sect3_banner_badge {
+                    height: 1.88vw;
+                        padding: 0 0.76vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 0;
+                        font-size: 0.97rem;
+                        font-weight: 400;
+                        color: #ffffff;
+                        background: #EE685F;
+                        border-radius: 5px;
+                }
+                .sect3_banner_title {
+                    font-size: 2.85rem;
+                    width: 33vw;
+                    font-weight: 500;
+                    line-height: 1.25;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                    font-family: "Jost", sans-serif;
+                }
+                .sect3_banner_btn {
+                    width: 9.17vw; 
+                    height: 3.68vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+                    background: #FFFFFF;
+                    font-size: 1.11rem;
+                    font-weight: 400;
+                    color: #282739;
+                }
+            }
+        }
+    }
+}

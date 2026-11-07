@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+// font-family: "Jost", sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hdr {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    .hdr_top {
+        width: 100%;
+        height: 2.66vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #EEF0F5;
+        .hdr_top_in {
+            width: 77.08vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .hdr_top_left {
+                display: flex;
+                align-items: center;
+                gap: 2.08vw;
+                .hdr_top_link {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    white-space: nowrap;
+                    text-decoration: none;
+                    color: #77778A;
+                    font-family: "Jost", sans-serif;
+                }
+                .hdr_msgs {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.52vw;
+                    .hdr_msg {
+                        width: 0.94vw;
+                    }
+                }
+            }
+            .hdr_top_right {
+                display: flex;
+                align-items: center;
+                gap: 0.63vw;
+                .hdr_phone {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    white-space: nowrap;
+                    text-decoration: none;
+                    color: #2A2A3C;
+                    font-family: "Jost", sans-serif;
+                }
+                .hdr_plus {
+                    width: 1.25vw;
+                    height: 1.25vw;
+                }
+            }
+        }
+    }
+    .hdr_main {
+        width: 100%;
+        height: 7.24vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .hdr_main_in {
+            width: 77.08vw;
+            display: flex;
+            align-items: center;
+            gap: 1.4vw;
+            .hdr_a {
+                display: flex;
+                align-items: center;
+                gap: 2.47vw;
+                flex-shrink: 0;
+                .hdr_logo {
+                    width: 8.02vw;
+                }
+                .hdr_catalog {
+                    width: 7.92vw;
+                    height: 2.81vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.94vw;
+                    border: none;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    background: #6F73EE;
+                    .hdr_catalog_icon {
+                        width: 0.9vw;
+                    }
+                    .hdr_catalog_text {
+                        font-size: 1.25rem;
+                        font-weight: 500;
+                        color: #FFFFFF;
+                        font-family: "Jost", sans-serif;
+                    }
+                }
+            }
+            .hdr_b {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                gap: 3.23vw;
+                .hdr_search {
+                    flex: 1;
+                    height: 2.81vw;
+                    display: flex;
+                    align-items: center;
+                    gap: 1.44vw;
+                    border: 2px solid #6F73EE;
+                    border-radius: 6px;
+                    overflow: hidden;
+                    .hdr_search_left {
+                        width: 5.52vw;
+                        flex-shrink: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        .hdr_select {
+                            width: 5.21vw;
+                            height: 2.19vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 0.36vw;
+                            border-radius: 4px;
+                            background: #F4F5FA;
+                            .hdr_select_text {
+                                font-size: 1.125rem;
+                                font-weight: 500;
+                                color: #2A2A3C;
+                                font-family: "Jost", sans-serif;
+                            }
+                            .hdr_select_caret {
+                                width: 0;
+                                height: 0;
+                                border-left: 4px solid transparent;
+                                border-right: 4px solid transparent;
+                                border-top: 5px solid #2A2A3C;
+                            }
+                        }
+                    }
+                    .hdr_input {
+                        flex: 1;
+                        height: 100%;
+                        border: none;
+                        outline: none;
+                        background: transparent;
+                        font-size: 1.125rem;
+                        font-weight: 400;
+                        color: #2A2A3C;
+                        font-family: "Jost", sans-serif;
+                        &::placeholder {
+                            color: #77778A;
+                        }
+                    }
+                    .hdr_search_btn {
+                        width: 2.8vw;
+                        height: 100%;
+                        flex-shrink: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: none;
+                        cursor: pointer;
+                        background: #6F73EE;
+                        .hdr_search_icon {
+                            width: 1.04vw;
+                        }
+                    }
+                }
+                .hdr_tools {
+                    flex-shrink: 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 1.82vw;
+                    .hdr_tool_compare {
+                        width: 1.44vw;
+                    }
+                    .hdr_tool_heart {
+                        width: 1.21vw;
+                    }
+                    .hdr_cart {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.73vw;
+                        .hdr_cart_icon {
+                            width: 1.35vw;
+                        }
+                        .hdr_cart_text {
+                            font-size: 1.25rem;
+                            font-weight: 500;
+                            white-space: nowrap;
+                            color: #2A2A3C;
+                            font-family: "Jost", sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hdr_nav {
+        width: 100%;
+        height: 2.81vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F4F5FA;
+        .hdr_nav_in {
+            width: 77.08vw;
+            display: flex;
+            align-items: center;
+            gap: 3.49vw;
+            .hdr_nav_link {
+                font-size: 1.125rem;
+                font-weight: 500;
+                white-space: nowrap;
+                text-decoration: none;
+                color: #2A2A3C;
+                font-family: "Jost", sans-serif;
+            }
+            .hdr_nav_item {
+                display: flex;
+                align-items: center;
+                gap: 0.63vw;
+                .hdr_badge {
+                    width: 8.34vw;
+                    height: 1.41vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100px;
+                    background: #6F73EE;
+                    font-size: 0.875rem;
+                    font-weight: 400;
+                    white-space: nowrap;
+                    color: #FFFFFF;
+                    font-family: "Jost", sans-serif;
+                }
+                .hdr_badge_round {
+                    width: 1.41vw;
+                    height: 1.41vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100px;
+                    background: #6F73EE;
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    color: #FFFFFF;
+                    font-family: "Jost", sans-serif;
+                }
+            }
+        }
+    }
+}

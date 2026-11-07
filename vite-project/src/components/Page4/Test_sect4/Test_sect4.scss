@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.test3 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .test3_spacer_top {
+        height: 6vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .test3_spacer_bottom {
+        height: 6vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .test3_all {
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .test3_banner {
+            width: 95vw;
+            height: 25vw;
+            border-radius: 12px;
+            background-color: #F4F7FB;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+
+            .test3_spacer_left {
+                width: 9vw;
+                height: 100%;
+                flex-shrink: 0;
+            }
+
+            .test3_content {
+                width: 48vw;
+                display: flex;
+                flex-direction: column;
+                gap: 1.8vw;
+                z-index: 2;
+
+                .test3_titles {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.8vw;
+
+                    .test3_title {
+                        font-size: 2.2rem;
+                        font-weight: 600;
+                        line-height: 120%;
+                        color: #282739;
+                        text-transform: uppercase;
+                    }
+
+                    .test3_subtitle {
+                        font-size: 1.05rem;
+                        font-weight: 400;
+                        line-height: 140%;
+                        color: #282739;
+                    }
+                }
+
+                .test3_form {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1.2vw;
+
+                    .test3_input {
+                        width: 16vw;
+                        height: 3.6vw;
+                        border-radius: 6px;
+                        border: 1px solid #EAEBED;
+                        outline: none;
+                        background-color: #FFFFFF;
+                        color: #282739;
+                        font-size: 1rem;
+                        font-family: "Jost", sans-serif;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+
+                        &::placeholder {
+                            color: #5D6C7B;
+                        }
+                    }
+
+                    .test3_btn {
+                        width: 18vw;
+                        height: 3.6vw;
+                        border-radius: 6px;
+                        background-color: #6F73EE;
+                        color: #FFFFFF;
+                        font-size: 0.95rem;
+                        font-weight: 500;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                .test3_agree_row {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    gap: 0.6vw;
+
+                    .test3_check_icon {
+                        color: #6F73EE;
+                        font-size: 0.85rem;
+                        font-weight: 700;
+                        line-height: 1.2;
+                    }
+
+                    .test3_agree_text {
+                        font-size: 0.72rem;
+                        line-height: 130%;
+                        color: #5D6C7B;
+
+                        .test3_agree_link {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .test3_woman_box {
+                position: absolute;
+                right: 7vw;
+                bottom: 0;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                pointer-events: none;
+                z-index: 1;
+            }
+        }
+    }
+}

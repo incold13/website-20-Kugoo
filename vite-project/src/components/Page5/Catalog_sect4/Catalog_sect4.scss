@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+.sect9 {
+    width: 100vw;
+    height: 42vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+    overflow: hidden;
+
+    .sect9_all {
+        width: 100vw;
+        height: 36vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .sect9_header {
+            width: 77.08vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            .sect9_header_left {
+                display: flex;
+                flex-direction: column;
+                gap: 0.97vw;
+
+                .sect9_title {
+                    font-size: 2.22rem;
+                    font-weight: 600;
+                    line-height: 120%;
+                    color: #282739;
+                    text-transform: uppercase;
+                    font-family: "Jost", sans-serif;
+                }
+
+                .sect9_desc {
+                    width: 28vw;
+                    font-size: 0.95rem;
+                    font-weight: 400;
+                    line-height: 140%;
+                    color: #5D6C7B;
+                    font-family: "Jost", sans-serif;
+                }
+            }
+
+            .sect9_link {
+                display: flex;
+                align-items: center;
+                gap: 0.56vw;
+                font-size: 0.97rem;
+                font-weight: 400;
+                color: #6F73EE;
+                text-decoration: none;
+                cursor: pointer;
+
+                img {
+                    width: 0.83vw;
+                }
+
+                &:hover {
+                    gap: 0.75vw;
+                }
+            }
+        }
+
+        .sect9_slider {
+            width: 100vw;
+            height: 25vw;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            overflow: hidden;
+
+            .sect9_btn_next {
+                position: absolute;
+                left: 56vw;
+                top: 6.5vw;
+                z-index: 10;
+                width: 3.33vw;
+                height: 3.33vw;
+                background-color: #6F73EE;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow: 0 4px 15px rgba(111, 115, 238, 0.45);
+                transition: transform 0.2s ease, background-color 0.2s ease;
+
+                img {
+                    width: 0.83vw;
+                    height: 1.1vw;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    background-color: #5d61db;
+                }
+
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+
+            .sect9_track {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 2vw;
+                transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+                will-change: transform;
+
+                .sect9_card {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.83vw;
+                    flex-shrink: 0;
+                    cursor: pointer;
+                    user-select: none;
+
+                    .sect9_card_img_box {
+                        width: 20vw;
+                        height: 12.5vw;
+                        position: relative;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: width 0.45s cubic-bezier(0.25, 1, 0.5, 1), height 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+
+                        .sect9_card_img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+
+                        .sect9_play_btn {
+                            position: absolute;
+                            z-index: 2;
+                            width: 3.61vw;
+                            height: 3.61vw;
+                            background-color: #FFFFFF;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+                            transition: width 0.45s cubic-bezier(0.25, 1, 0.5, 1), height 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+
+                            .sect9_play_icon {
+                                width: 0.83vw;
+                                height: 0.97vw;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                    }
+
+                    .sect9_card_title {
+                        width: 20vw;
+                        font-size: 0.97rem;
+                        font-weight: 500;
+                        line-height: 130%;
+                        color: #282739;
+                        font-family: "Jost", sans-serif;
+                        transition: width 0.45s cubic-bezier(0.25, 1, 0.5, 1), font-size 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+                    }
+
+                    &.sect9_card_active {
+                        .sect9_card_img_box {
+                            width: 32vw;
+                            height: 18vw;
+
+                            .sect9_play_btn {
+                                width: 5.55vw;
+                                height: 5.55vw;
+
+                                .sect9_play_icon {
+                                    width: 1.15vw;
+                                    height: 1.35vw;
+                                }
+                            }
+                        }
+
+                        .sect9_card_title {
+                            width: 32vw;
+                            font-size: 1.15rem;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

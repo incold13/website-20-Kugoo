@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.coop12 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .coop12_spacer_top {
+        height: 4vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .coop12_spacer_bottom {
+        height: 5vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .coop12_all {
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .coop12_banner {
+            width: 95vw;
+            height: 34vw;
+            border-radius: 12px;
+            background-color: #F4F7FB;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .coop12_spacer_left {
+                width: 8.96vw;
+                height: 100%;
+                flex-shrink: 0;
+            }
+
+            .coop12_spacer_right {
+                width: 8.96vw;
+                height: 100%;
+                flex-shrink: 0;
+            }
+
+            .coop12_content {
+                width: 77.08vw;
+                height: 28vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .coop12_left {
+                    width: 45vw;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2vw;
+
+                    .coop12_title {
+                        font-size: 2.2rem;
+                        font-weight: 600;
+                        line-height: 120%;
+                        color: #282739;
+                        text-transform: uppercase;
+                    }
+
+                    .coop12_list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1vw;
+
+                        .coop12_list_item {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 0.8vw;
+
+                            .coop12_check_box {
+                                width: 1.4vw;
+                                height: 1.4vw;
+                                flex-shrink: 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+
+                            .coop12_item_text {
+                                font-size: 1.05rem;
+                                font-weight: 400;
+                                line-height: 140%;
+                                color: #282739;
+                            }
+                        }
+                    }
+                }
+
+                .coop12_right {
+                    width: 28vw;
+                    height: 28vw;
+                    border-radius: 12px;
+                    background-color: #6F73EE;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1.4vw;
+
+                    .coop12_card_titles {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0.6vw;
+
+                        .coop12_card_title {
+                            font-size: 1.25rem;
+                            font-weight: 600;
+                            line-height: 125%;
+                            color: #FFFFFF;
+                            text-align: center;
+                            text-transform: uppercase;
+                        }
+
+                        .coop12_card_subtitle {
+                            font-size: 0.95rem;
+                            font-weight: 400;
+                            line-height: 135%;
+                            color: rgba(255, 255, 255, 0.9);
+                            text-align: center;
+                        }
+                    }
+
+                    .coop12_form {
+                        width: 23vw;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.9vw;
+
+                        .coop12_input {
+                            width: 23vw;
+                            height: 3.6vw;
+                            border-radius: 6px;
+                            border: none;
+                            outline: none;
+                            background-color: rgba(255, 255, 255, 0.25);
+                            color: #FFFFFF;
+                            font-size: 1.05rem;
+                            font-family: "Jost", sans-serif;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+
+                            &::placeholder {
+                                color: rgba(255, 255, 255, 0.8);
+                            }
+                        }
+
+                        .coop12_btn {
+                            width: 23vw;
+                            height: 3.6vw;
+                            border-radius: 6px;
+                            background-color: #FFFFFF;
+                            color: #6F73EE;
+                            font-size: 1.05rem;
+                            font-weight: 600;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+
+                    .coop12_agree_row {
+                        width: 23vw;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 0.6vw;
+                        cursor: pointer;
+                        user-select: none;
+
+                        .coop12_custom_check {
+                            width: 1.1vw;
+                            height: 1.1vw;
+                            flex-shrink: 0;
+                            border: 1.5px solid rgba(255, 255, 255, 0.9);
+                            border-radius: 3px;
+                            background-color: rgba(255, 255, 255, 0.15);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 0.75rem;
+                            font-weight: 700;
+                            color: #FFFFFF;
+                            line-height: 1;
+                        }
+
+                        .coop12_agree_text {
+                            font-size: 0.72rem;
+                            line-height: 130%;
+                            color: rgba(255, 255, 255, 0.85);
+
+                            .coop12_agree_link {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

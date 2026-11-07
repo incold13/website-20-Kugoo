@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.serv5 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .serv5_spacer_top {
+        height: 5vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .serv5_spacer_bottom {
+        height: 5vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .serv5_all {
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .serv5_content {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .serv5_video_box {
+                width: 48vw;
+                height: 31vw;
+                border-radius: 10px;
+                overflow: hidden;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .serv5_video_img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .serv5_play_btn {
+                    position: absolute;
+                    background-color: #FFFFFF;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+                    transition: transform 0.2s ease;
+
+                    .serv5_play_icon {
+                        object-fit: contain;
+                        transform: translateX(1.5px);
+                    }
+
+                    &:hover {
+                        transform: scale(1.08);
+                    }
+
+                    &:active {
+                        transform: scale(0.96);
+                    }
+                }
+            }
+
+            .serv5_info {
+                width: 43vw;
+                display: flex;
+                flex-direction: column;
+                gap: 1.8vw;
+
+                .serv5_titles {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.6vw;
+
+                    .serv5_title {
+                        font-size: 2.22rem;
+                        font-weight: 700;
+                        line-height: 120%;
+                        color: #282739;
+                        text-transform: uppercase;
+                        font-family: "Jost", sans-serif;
+                    }
+
+                    .serv5_subtitle {
+                        font-size: 1.05rem;
+                        font-weight: 400;
+                        color: #282739;
+                        font-family: "Jost", sans-serif;
+                    }
+                }
+
+                .serv5_desc {
+                    width: 28vw;
+                    font-size: 0.88rem;
+                    font-weight: 400;
+                    line-height: 145%;
+                    color: #282739;
+                    font-family: "Jost", sans-serif;
+                }
+
+                .serv5_benefits_block {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.8vw;
+
+                    .serv5_benefits_title {
+                        font-size: 0.95rem;
+                        font-weight: 600;
+                        color: #282739;
+                        font-family: "Jost", sans-serif;
+                    }
+
+                    .serv5_benefits_list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.8vw;
+
+                        .serv5_benefit_item {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 0.7vw;
+
+                            .serv5_check_icon {
+                                width: 1.1vw;
+                                height: 1.1vw;
+                                object-fit: contain;
+                                flex-shrink: 0;
+                            }
+
+                            .serv5_benefit_text {
+                                font-size: 0.85rem;
+                                font-weight: 400;
+                                line-height: 130%;
+                                color: #282739;
+                                font-family: "Jost", sans-serif;
+                            }
+                        }
+                    }
+                }
+
+                .serv5_link_text {
+                    font-size: 0.85rem;
+                    font-weight: 400;
+                    color: #282739;
+                    font-family: "Jost", sans-serif;
+
+                    .serv5_article_link {
+                        color: #6F73EE;
+                        transition: opacity 0.2s ease;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.coop1 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .coop1_spacer_top {
+        height: 3vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .coop1_spacer_bottom {
+        height: 5vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .coop1_all {
+        width: 95vw;
+        height: 59vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .coop1_banner {
+            width: 95vw;
+            height: 59vh;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #F4F7FB;
+
+            .coop1_left {
+                width: 46vw;
+                display: flex;
+                flex-direction: column;
+                gap: 2.5vw;
+
+                .coop1_titles {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.2vw;
+
+                    .coop1_title {
+                        font-size: 2.1875rem;
+                        font-weight: 600;
+                        line-height: 120%;
+                        color: #282739;
+                        text-transform: uppercase;
+                        font-family: "Jost", sans-serif;
+                    }
+
+                    .coop1_subtitle {
+                        font-size: 1.25rem;
+                        font-weight: 400;
+                        line-height: 140%;
+                        color: #282739;
+                        font-family: "Jost", sans-serif;
+                    }
+                }
+
+                .coop1_features {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5vw;
+
+                    .coop1_feat_row {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 2.5vw;
+
+                        .coop1_feat_item {
+                            width: 19vw;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 0.8vw;
+
+                            .coop1_feat_icon_wrap {
+                                width: 2.8vw;
+                                height: 2.8vw;
+                                border-radius: 6px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                flex-shrink: 0;
+
+                                img {
+                                    width: 2.4vw;
+                                    height: 2.4vw;
+                                }
+                            }
+
+                            .coop1_feat_text {
+                                font-size: 0.875rem;
+                                font-weight: 500;
+                                line-height: 135%;
+                                color: #282739;
+                                font-family: "Jost", sans-serif;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .coop1_right {
+                width: 32vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .coop1_card {
+                    width: 100%;
+                    height: 28vw;
+                    background-color: #6F73EE;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3vw;
+                    justify-content: center;
+                    align-items: center;
+
+                    .coop1_card_titles {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        gap: 0.6vw;
+
+                        .coop1_card_title {
+                            font-size: 1.25rem;
+                            font-weight: 600;
+                            line-height: 130%;
+                            color: #FFFFFF;
+                            text-transform: uppercase;
+                            font-family: "Jost", sans-serif;
+                        }
+
+                        .coop1_card_subtitle {
+                            font-size: 0.875rem;
+                            font-weight: 400;
+                            line-height: 135%;
+                            color: #FFFFFF;
+                            opacity: 0.9;
+                            font-family: "Jost", sans-serif;
+                        }
+                    }
+
+                    .coop1_form {
+                        width: 25vw;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1vw;
+
+                        .coop1_input {
+                            width: 100%;
+                            height: 3.4vw;
+                            background-color: rgba(255, 255, 255, 0.2);
+                            border: none;
+                            outline: none;
+                            border-radius: 6px;
+                            text-align: center;
+                            font-size: 1rem;
+                            font-weight: 400;
+                            color: #FFFFFF;
+                            font-family: "Jost", sans-serif;
+
+                            &::placeholder {
+                                color: rgba(255, 255, 255, 0.85);
+                            }
+                        }
+
+                        .coop1_btn {
+                            width: 100%;
+                            height: 3.4vw;
+                            background-color: #FFFFFF;
+                            border-radius: 6px;
+                            color: #6F73EE;
+                            font-size: 1rem;
+                            font-weight: 600;
+                            font-family: "Jost", sans-serif;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+                            transition: transform 0.2s ease, opacity 0.2s ease;
+
+                            &:hover {
+                                transform: translateY(-2px);
+                                opacity: 0.95;
+                            }
+
+                            &:active {
+                                transform: translateY(0);
+                            }
+                        }
+                    }
+
+                    .coop1_agree_row {
+                        width: 25vw;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 0.6vw;
+
+                        .coop1_check_icon_box {
+                            width: 1.1vw;
+                            height: 1.1vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-shrink: 0;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
+                        }
+
+                        .coop1_agree_text {
+                            font-size: 0.75rem;
+                            font-weight: 400;
+                            line-height: 130%;
+                            color: #FFFFFF;
+                            opacity: 0.9;
+                            font-family: "Jost", sans-serif;
+
+                            .coop1_agree_link {
+                                text-decoration: underline;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

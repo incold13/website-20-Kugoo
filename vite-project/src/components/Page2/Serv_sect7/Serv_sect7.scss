@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+.serv7 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .serv7_spacer_top {
+        height: 6vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .serv7_spacer_bottom {
+        height: 7vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .serv7_all {
+        width: 77.08vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5vw;
+
+        .serv7_header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1vw;
+            text-align: center;
+
+            .serv7_title {
+                font-size: 2.22rem;
+                font-weight: 700;
+                line-height: 120%;
+                color: #282739;
+                text-transform: uppercase;
+                font-family: "Jost", sans-serif;
+            }
+
+            .serv7_subtitle {
+                font-size: 0.95rem;
+                font-weight: 400;
+                color: #282739;
+                font-family: "Jost", sans-serif;
+            }
+        }
+
+        .serv7_tabs {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1vw;
+
+            .serv7_tab_btn {
+                height: 3vw;
+                padding: 0 1.8vw;
+                background-color: #F4F7FB;
+                border: 1px solid transparent;
+                border-radius: 6px;
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: #5D6C7B;
+                font-family: "Jost", sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+                &.serv7_tab_active {
+                    background-color: #FFFFFF;
+                    border-color: #6F73EE;
+                    color: #6F73EE;
+                }
+            }
+        }
+
+        .serv7_table {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .serv7_col {
+                width: 36vw;
+                display: flex;
+                flex-direction: column;
+
+                .serv7_row {
+                    width: 100%;
+                    height: 3.6vw;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid #F0F1F5;
+
+                    .serv7_model {
+                        font-size: 0.95rem;
+                        font-weight: 400;
+                        color: #282739;
+                        font-family: "Jost", sans-serif;
+                    }
+
+                    .serv7_price {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: #282739;
+                        font-family: "Jost", sans-serif;
+                    }
+                }
+            }
+        }
+
+        .serv7_btn {
+            width: 15.5vw;
+            height: 3.2vw;
+            background-color: #6F73EE;
+            border-radius: 6px;
+            color: #FFFFFF;
+            font-size: 0.95rem;
+            font-weight: 500;
+            font-family: "Jost", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(111, 115, 238, 0.35);
+            transition: background-color 0.2s ease, transform 0.2s ease;
+
+            &:hover {
+                background-color: #5d61db;
+                transform: translateY(-2px);
+            }
+
+            &:active {
+                transform: translateY(0);
+            }
+        }
+    }
+}

@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+.sect12 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+
+    .sect12_spacer_bottom {
+        height: 6vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .sect12_all {
+        width: 77.08vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5vw;
+
+        .sect12_header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .sect12_title {
+                width: 38vw;
+                text-align: center;
+                font-size: 2.22rem;
+                font-weight: 600;
+                color: #282739;
+                text-transform: uppercase;
+                font-family: "Jost", sans-serif;
+            }
+        }
+
+        .sect12_cards_row {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .sect12_card {
+                width: 18.06vw;
+                height: 63vh;
+                display: flex;
+                flex-direction: column;
+                border: 1.5px solid #EAEBED;
+                border-radius: 10px;
+                overflow: hidden;
+                background-color: #FFFFFF;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+                &:hover {
+                    transform: translateY(-4px);
+                    box-shadow: 0 10px 24px rgba(40, 39, 56, 0.08);
+                }
+
+                .sect12_card_top {
+                    background-size: 90%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: #F0F1F5;
+                    width: 100%;
+                    height: 15vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-image: url(./src/assets/Sect2_scooter.png);
+
+                    .sect12_top_bar {
+                        width: 15.5vw;
+                        height: 2.5vw;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .sect12_badge_hit {
+                            width: 3.2vw;
+                            height: 1.5vw;
+                            background-color: #EE685F;
+                            border-radius: 4px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            p {
+                                font-size: 0.72rem;
+                                font-weight: 600;
+                                color: #FFFFFF;
+                                font-family: "Jost", sans-serif;
+                                text-transform: uppercase;
+                            }
+                        }
+
+                        .sect12_badge_new {
+                            width: 4.8vw;
+                            height: 1.5vw;
+                            background-color: #75D14A;
+                            border-radius: 4px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            p {
+                                font-size: 0.72rem;
+                                font-weight: 600;
+                                color: #FFFFFF;
+                                font-family: "Jost", sans-serif;
+                            }
+                        }
+
+                        .sect12_compare_btn {
+                            width: 1.5vw;
+                            height: 1.5vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+
+                            img {
+                                width: 1.1vw;
+                                height: 1.1vw;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+
+                    .sect12_scooter_box {
+                        width: 16.5vw;
+                        height: 12vw;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .sect12_arrow_btn {
+                            width: 1.8vw;
+                            height: 1.8vw;
+                            border-radius: 50%;
+                            background-color: #FFFFFF;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+                            cursor: pointer;
+
+                            img {
+                                width: 0.7vw;
+                                height: 0.7vw;
+                                object-fit: contain;
+                            }
+                        }
+
+                        .sect12_arrow_placeholder {
+                            width: 1.8vw;
+                            height: 1.8vw;
+                        }
+
+                        .sect12_img_wrap {
+                            width: 11vw;
+                            height: 11vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+
+                .sect12_card_bottom {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .sect12_card_bottom_inner {
+                        width: 15.5vw;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1vw;
+
+                        .sect12_card_name {
+                            font-size: 1.11rem;
+                            font-weight: 600;
+                            color: #282739;
+                            font-family: "Jost", sans-serif;
+                            height: 2.5vw;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .sect12_specs_grid {
+                            width: 100%;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: 0.6vw;
+
+                            .sect12_spec_item {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 0.45vw;
+
+                                img {
+                                    width: 1vw;
+                                    height: 1vw;
+                                    object-fit: contain;
+                                }
+
+                                p {
+                                    font-size: 0.83rem;
+                                    font-weight: 400;
+                                    color: #5D6C7B;
+                                    font-family: "Jost", sans-serif;
+                                }
+                            }
+                        }
+
+                        .sect12_price_row {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .sect12_price_box {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 0.2vw;
+
+                                .sect12_old_price {
+                                    font-size: 0.78rem;
+                                    color: #5D6C7B;
+                                    text-decoration: line-through;
+                                    font-family: "Jost", sans-serif;
+                                }
+
+                                .sect12_new_price {
+                                    font-size: 1.22rem;
+                                    font-weight: 700;
+                                    color: #282739;
+                                    font-family: "Jost", sans-serif;
+                                }
+                            }
+
+                            .sect12_actions {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 0.45vw;
+
+                                .sect12_action_btn {
+                                    width: 2.2vw;
+                                    height: 2.2vw;
+                                    border: 1px solid #EAEBED;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    cursor: pointer;
+                                    transition: border-color 0.15s, transform 0.15s;
+
+                                    &:hover {
+                                        border-color: #6F73EE;
+                                        transform: scale(1.06);
+                                    }
+
+                                    img {
+                                        width: 50%;
+                                        height: 50%;
+                                        object-fit: contain;
+                                    }
+                                }
+                            }
+                        }
+
+                        .sect12_buy_btn {
+                            width: 100%;
+                            height: 2.6vw;
+                            background-color: #6F73EE;
+                            border-radius: 6px;
+                            color: #FFFFFF;
+                            font-size: 0.9rem;
+                            font-weight: 500;
+                            font-family: "Jost", sans-serif;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            transition: background-color 0.15s;
+
+                            &:hover {
+                                background-color: #5d61db;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

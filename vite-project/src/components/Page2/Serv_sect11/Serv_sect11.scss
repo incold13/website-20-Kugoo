@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+.serv11 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .serv11_spacer_top {
+        height: 6vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .serv11_spacer_bottom {
+        height: 7vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .serv11_all {
+        width: 77.08vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4vw;
+
+        .serv11_header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .serv11_title {
+                font-size: 2.22rem;
+                font-weight: 700;
+                line-height: 120%;
+                color: #282739;
+                text-transform: uppercase;
+                font-family: "Jost", sans-serif;
+            }
+        }
+
+        .serv11_list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .serv11_item {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid #EAEBED;
+
+                .serv11_item_header {
+                    width: 100%;
+                    min-height: 4.8vw;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    user-select: none;
+
+                    .serv11_question {
+                        width: 70vw;
+                        font-size: 1.05rem;
+                        font-weight: 500;
+                        line-height: 135%;
+                        color: #282739;
+                        font-family: "Jost", sans-serif;
+                    }
+
+                    .serv11_icon {
+                        width: 1.25vw;
+                        height: 1.25vw;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-shrink: 0;
+                        transition: transform 0.25s ease;
+
+                        .serv11_line_h {
+                            position: absolute;
+                            width: 100%;
+                            height: 1.5px;
+                            background-color: #282739;
+                            border-radius: 1px;
+                        }
+
+                        .serv11_line_v {
+                            position: absolute;
+                            width: 1.5px;
+                            height: 100%;
+                            background-color: #282739;
+                            border-radius: 1px;
+                        }
+
+                        &.serv11_icon_open {
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+
+                .serv11_item_body {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .serv11_body_spacer {
+                        height: 0.8vw;
+                        width: 100%;
+                        flex-shrink: 0;
+                    }
+
+                    .serv11_body_spacer_bottom {
+                        height: 2vw;
+                        width: 100%;
+                        flex-shrink: 0;
+                    }
+
+                    .serv11_answer {
+                        width: 68vw;
+                        font-size: 0.95rem;
+                        font-weight: 400;
+                        line-height: 155%;
+                        color: #5D6C7B;
+                        font-family: "Jost", sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
