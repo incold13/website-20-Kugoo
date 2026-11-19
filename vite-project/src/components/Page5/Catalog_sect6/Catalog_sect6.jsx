@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Photo } from "../../../photo.js"
 import "./Catalog_sect6.scss"
 
@@ -131,9 +132,11 @@ export default function Catalog_sect6() {
                                         </div>
                                     </div>
 
-                                    <button className="sect12_buy_btn" type="button">
-                                        Купить в 1 клик
-                                    </button>
+                                    <Link to="/catalog_prod">
+                                        <button className="sect12_buy_btn" type="button">
+                                            Купить в 1 клик
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

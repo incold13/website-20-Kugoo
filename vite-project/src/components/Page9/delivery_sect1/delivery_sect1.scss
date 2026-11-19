@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.deliv1 {
+    width: 100vw;
+    height: 23vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .deliv1_breadcrumbs_wrap {
+        width: 100vw;
+        height: 3.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .deliv1_breadcrumbs {
+            width: 77.08vw;
+            display: flex;
+            align-items: center;
+            gap: 0.42vw;
+            font-size: 0.83rem;
+            color: #5D6C7B;
+
+            .deliv1_home_box {
+                width: 0.83vw;
+                height: 0.83vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .deliv1_bc_link {
+                color: #5D6C7B;
+                transition: color 0.15s ease;
+
+                &:hover {
+                    color: #6F73EE;
+                }
+            }
+
+            .deliv1_bc_slash {
+                color: #5D6C7B;
+                user-select: none;
+            }
+
+            .deliv1_bc_current {
+                color: #282739;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .deliv1_banner {
+        width: 95vw;
+        height: 17.5vw;
+        border-radius: 12px;
+        background: linear-gradient(90deg, #6F73EE 0%, #7E82F4 50%, #8E92F9 100%);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .deliv1_inner {
+            width: 88vw;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .deliv1_content {
+                width: 52vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .deliv1_title {
+                    font-size: 2.35rem;
+                    font-weight: 600;
+                    line-height: 125%;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                    font-family: "Jost", sans-serif;
+                }
+            }
+
+            .deliv1_drone_box {
+                width: 32vw;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                .deliv1_drone_img {
+                    height: 94%;
+                    width: auto;
+                    object-fit: contain;
+                    display: block;
+                }
+            }
+        }
+    }
+}

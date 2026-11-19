@@ -1,0 +1,633 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cat_prod3 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .cat_prod3_spacer_top {
+        height: 2vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .cat_prod3_spacer_bottom {
+        height: 5vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .cat_prod3_all {
+        width: 77vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1.8vw;
+
+        .cat_prod3_top_bar {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .cat_prod3_main_title {
+                font-size: 1.45rem;
+                font-weight: 700;
+                color: #282739;
+                text-transform: uppercase;
+            }
+
+            .cat_prod3_sort_block {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1vw;
+
+                .cat_prod3_sort_label {
+                    font-size: 0.9rem;
+                    color: #282739;
+                    font-weight: 500;
+                }
+
+                .cat_prod3_select_btn {
+                    height: 2.4vw;
+                    border: 1px solid #EAEBED;
+                    border-radius: 6px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 0.6vw;
+                    padding: 0 0.8vw;
+                    font-size: 0.85rem;
+                    color: #5D6C7B;
+                    cursor: pointer;
+
+                    .cat_prod3_select_arrow {
+                        font-size: 0.75rem;
+                        color: #6F73EE;
+                    }
+                }
+            }
+        }
+
+        .cat_prod3_content {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1.8vw;
+
+            .cat_prod3_sidebar {
+                width: 16.5vw;
+                display: flex;
+                flex-direction: column;
+                gap: 1.4vw;
+
+                .cat_prod3_filter_card {
+                    width: 100%;
+                    border-radius: 10px;
+                    background-color: #F4F7FB;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 1.2vw 0;
+
+                    .cat_prod3_filter_inner {
+                        width: 13.8vw;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.4vw;
+
+                        .cat_prod3_filter_group {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.7vw;
+
+                            .cat_prod3_group_title {
+                                font-size: 0.95rem;
+                                font-weight: 600;
+                                color: #282739;
+                            }
+
+                            .cat_prod3_slider_wrap {
+                                width: 100%;
+                                height: 1vw;
+                                display: flex;
+                                align-items: center;
+
+                                .cat_prod3_slider_line {
+                                    width: 100%;
+                                    height: 3px;
+                                    background-color: #6F73EE;
+                                    position: relative;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    .cat_prod3_slider_thumb {
+                                        width: 0.8vw;
+                                        height: 0.8vw;
+                                        border-radius: 50%;
+                                        background-color: #6F73EE;
+                                        border: 2px solid #FFFFFF;
+                                        box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+
+                            .cat_prod3_inputs_row {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .cat_prod3_price_input {
+                                    width: 5.8vw;
+                                    height: 2.2vw;
+                                    border: 1px solid #EAEBED;
+                                    border-radius: 6px;
+                                    background-color: #FFFFFF;
+                                    outline: none;
+                                    text-align: center;
+                                    font-size: 0.82rem;
+                                    font-family: "Jost", sans-serif;
+                                    color: #282739;
+                                }
+
+                                .cat_prod3_price_dash {
+                                    color: #5D6C7B;
+                                    font-size: 0.85rem;
+                                }
+                            }
+
+                            .cat_prod3_checkbox_item {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 0.5vw;
+                                cursor: pointer;
+                                user-select: none;
+
+                                .cat_prod3_custom_box {
+                                    width: 1vw;
+                                    height: 1vw;
+                                    border: 1.5px solid #EAEBED;
+                                    border-radius: 3px;
+                                    background-color: #FFFFFF;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 0.7rem;
+                                    font-weight: 700;
+                                    color: #6F73EE;
+                                    line-height: 1;
+                                    transition: border-color 0.15s, background-color 0.15s;
+
+                                    &.cat_prod3_checked {
+                                        border-color: #6F73EE;
+                                    }
+                                }
+
+                                &:hover {
+                                    .cat_prod3_custom_box {
+                                        border-color: #6F73EE;
+                                    }
+                                }
+
+                                .cat_prod3_check_label {
+                                    font-size: 0.82rem;
+                                    color: #282739;
+                                }
+                            }
+                        }
+
+                        .cat_prod3_show_more_filter {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 0.4vw;
+                            color: #6F73EE;
+                            font-size: 0.82rem;
+                            font-weight: 500;
+                            margin-top: 0.3vw;
+                        }
+                    }
+                }
+
+                .cat_prod3_promo_month {
+                    width: 100%;
+                    border-radius: 10px;
+                    background: linear-gradient(135deg, #F99E34 0%, #F57C00 100%);
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1vw;
+                    gap: 0.7vw;
+
+                    .cat_prod3_promo_header {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 0.4vw;
+                        color: #FFFFFF;
+                        font-weight: 600;
+                        font-size: 0.9rem;
+                    }
+
+                    .cat_prod3_promo_card_white {
+                        width: 100%;
+                        background-color: #FFFFFF;
+                        border-radius: 6px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 0.6vw;
+                        padding: 0.5vw 0.6vw;
+
+                        .cat_prod3_promo_scooter_box {
+                            width: 2.8vw;
+                            height: 2.8vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            overflow: hidden;
+
+                            img {
+                                max-width: 100%;
+                                max-height: 100%;
+                                object-fit: contain;
+                            }
+                        }
+
+                        .cat_prod3_promo_info {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.15vw;
+
+                            .cat_prod3_promo_model {
+                                font-size: 0.8rem;
+                                font-weight: 600;
+                                color: #282739;
+                            }
+
+                            .cat_prod3_promo_price {
+                                font-size: 0.8rem;
+                                font-weight: 700;
+                                color: #F57C00;
+                            }
+                        }
+                    }
+                }
+
+                .cat_prod3_manager_card {
+                    width: 100%;
+                    height: 5.2vw;
+                    border-radius: 10px;
+                    background-color: #64C538;
+                    position: relative;
+                    overflow: visible;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-end;
+                    cursor: pointer;
+
+                    .cat_prod3_manager_img_box {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        height: 5.2vw;
+                        display: flex;
+                        align-items: flex-end;
+                        pointer-events: none;
+
+                        img {
+                            height: 100%;
+                            width: auto;
+                            display: block;
+                        }
+                    }
+
+                    .cat_prod3_manager_text {
+                        font-size: 0.95rem;
+                        font-weight: 600;
+                        line-height: 130%;
+                        color: #FFFFFF;
+                        padding-right: 1.2vw;
+                        z-index: 2;
+                    }
+                }
+            }
+
+            .cat_prod3_grid {
+                width: 58.7vw;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                column-gap: 1.2vw;
+                row-gap: 1.6vw;
+
+                .cat_prod3_card {
+                    width: 18.76vw;
+                    height: 38vw;
+                    border: 1.5px solid #EAEBED;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: #FFFFFF;
+
+                    .cat_prod3_card_top {
+                        width: 100%;
+                        height: 17.2vw;
+                        background-color: #F0F1F5;
+                        background-image: url(../../../assets/catalog_prod3_scot.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .cat_prod3_top_spacer {
+                            width: 100%;
+                            height: 0.85vw;
+                            flex-shrink: 0;
+                        }
+
+                        .cat_prod3_card_top_bar {
+                            width: 16.5vw;
+                            height: 1.5vw;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .cat_prod3_badge {
+                                width: 4.8vw;
+                                height: 1.5vw;
+                                border-radius: 5px;
+                                font-size: 0.75rem;
+                                font-weight: 600;
+                                color: #FFFFFF;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                &_hit {
+                                    background-color: #EE685F;
+                                }
+
+                                &_new {
+                                    background-color: #75D14A;
+                                }
+                            }
+
+                            .cat_prod3_compare_btn {
+                                width: 1.5vw;
+                                height: 1.5vw;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+
+                                img {
+                                    width: 1.1vw;
+                                    height: 1.1vw;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+
+                    .cat_prod3_card_bottom {
+                        width: 14.5vw;
+                        height: 20.8vw;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .cat_prod3_card_content_spacer {
+                            width: 100%;
+                            height: 1.4vw;
+                            flex-shrink: 0;
+                        }
+
+                        .cat_prod3_card_title {
+                            font-size: 1.25rem;
+                            font-weight: 700;
+                            color: #282739;
+                            line-height: 120%;
+                        }
+
+                        .cat_prod3_specs {
+                            width: 16vw;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            row-gap: 0.9vw;
+
+                            .cat_prod3_spec_item {
+                                width: 7.8vw;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 0.45vw;
+                                font-size: 0.85rem;
+                                color: #5D6C7B;
+
+                                .cat_prod3_spec_icon {
+                                    width: 1.1vw;
+                                    height: 1.1vw;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+
+                                span {
+                                    font-size: 0.85rem;
+                                    color: #5D6C7B;
+                                }
+                            }
+                        }
+
+                        .cat_prod3_price_row {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .cat_prod3_prices {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 0.15vw;
+
+                                .cat_prod3_old_price {
+                                    font-size: 0.78rem;
+                                    color: #5D6C7B;
+                                    text-decoration: line-through;
+                                }
+
+                                .cat_prod3_current_price {
+                                    font-size: 1.45rem;
+                                    font-weight: 700;
+                                    color: #282739;
+                                    line-height: 110%;
+                                }
+                            }
+
+                            .cat_prod3_actions {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 0.5vw;
+
+                                .cat_prod3_icon_btn {
+                                    width: 2.8vw;
+                                    height: 2.8vw;
+                                    border: 1.5px solid #EAEBED;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    background-color: #FFFFFF;
+                                    cursor: pointer;
+                                    transition: border-color 0.15s;
+
+                                    img {
+                                        width: 1.15vw;
+                                        height: 1.15vw;
+                                    }
+
+                                    &:hover {
+                                        border-color: #6F73EE;
+                                    }
+                                }
+                            }
+                        }
+
+                        .cat_prod3_buy_link {
+                            width: 100%;
+                            display: flex;
+                            text-decoration: none;
+                        }
+
+                        .cat_prod3_buy_btn {
+                            width: 100%;
+                            height: 2.85vw;
+                            border-radius: 8px;
+                            background-color: #6F73EE;
+                            color: #FFFFFF;
+                            font-size: 0.95rem;
+                            font-weight: 500;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            transition: background-color 0.15s;
+
+                            &:hover {
+                                background-color: #5b5fd6;
+                            }
+                        }
+
+                        .cat_prod3_card_bottom_spacer {
+                            width: 100%;
+                            height: 1.0vw;
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+
+                .cat_prod3_quiz_card {
+                    width: 18.76vw;
+                    height: 38vw;
+                    border-radius: 10px;
+                    background-color: #EDF3FB;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    overflow: hidden;
+
+                    .cat_prod3_quiz_top {
+                        width: 16.5vw;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.8vw;
+
+                        .cat_prod3_quiz_top_spacer {
+                            width: 100%;
+                            height: 1.2vw;
+                            flex-shrink: 0;
+                        }
+
+                        .cat_prod3_quiz_title {
+                            font-size: 1.15rem;
+                            font-weight: 600;
+                            line-height: 125%;
+                            color: #282739;
+                        }
+
+                        .cat_prod3_quiz_desc {
+                            font-size: 0.82rem;
+                            line-height: 135%;
+                            color: #5D6C7B;
+                        }
+
+                        .cat_prod3_quiz_link {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 0.4vw;
+                            color: #6F73EE;
+                            font-size: 0.88rem;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .cat_prod3_quiz_img_box {
+                        width: 100%;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

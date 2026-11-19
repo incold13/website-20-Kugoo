@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.about2 {
+    width: 100vw;
+    height: 48vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .about2_all {
+        width: 77.08vw;
+        height: 42vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .about2_left {
+            width: 44vw;
+            height: 42vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .about2_title {
+                font-size: 2.43vw;
+                font-weight: 600;
+                line-height: 120%;
+                color: #282739;
+                text-transform: uppercase;
+                font-family: "Jost", sans-serif;
+            }
+
+            .about2_block {
+                display: flex;
+                flex-direction: column;
+                gap: 0.8vw;
+
+                .about2_subtitle {
+                    font-size: 1.39vw;
+                    font-weight: 500;
+                    line-height: 125%;
+                    color: #282739;
+                    font-family: "Jost", sans-serif;
+                }
+
+                .about2_desc {
+                    font-size: 1.25vw;
+                    font-weight: 400;
+                    line-height: 140%;
+                    color: #282739;
+                    font-family: "Jost", sans-serif;
+                }
+
+                .about2_list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.75vw;
+
+                    .about2_item {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 0.8vw;
+
+                        .about2_check_icon {
+                            width: 1.4vw;
+                            height: 1.4vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-shrink: 0;
+
+                            svg {
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                            }
+                        }
+
+                        .about2_item_text {
+                            font-size: 1.11vw;
+                            font-weight: 400;
+                            line-height: 130%;
+                            color: #282739;
+                            font-family: "Jost", sans-serif;
+
+                            strong {
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .about2_right {
+            width: 30vw;
+            height: 42vw;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .about2_cert_box {
+                width: 30vw;
+                height: 21vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .about2_cert_img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    display: block;
+                }
+            }
+        }
+    }
+}

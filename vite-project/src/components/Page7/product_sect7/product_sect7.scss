@@ -1,0 +1,424 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.prod7 {
+    width: 100vw;
+    height: 62vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .prod7_all {
+        width: 77.08vw;
+        height: 54vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .prod7_header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8vw;
+
+            .prod7_title {
+                font-size: 2.15rem;
+                font-weight: 700;
+                line-height: 125%;
+                color: #282739;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            .prod7_subtitle {
+                font-size: 1.05rem;
+                font-weight: 500;
+                line-height: 140%;
+                color: #282739;
+                text-align: center;
+            }
+        }
+
+        .prod7_bonuses {
+            width: 77.08vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.6vw;
+
+            .prod7_bonus_card {
+                flex: 1;
+                height: 5.6vw;
+                border-radius: 10px;
+                border: 1px solid #EAEDF2;
+                background-color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .prod7_bonus_inner {
+                    width: 33.5vw;
+                    height: 4.2vw;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1.2vw;
+
+                    .prod7_bonus_icon_box {
+                        width: 3.2vw;
+                        height: 3.2vw;
+                        flex-shrink: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            display: block;
+                        }
+                    }
+
+                    .prod7_bonus_text {
+                        font-size: 0.95rem;
+                        font-weight: 400;
+                        line-height: 135%;
+                        color: #282739;
+                    }
+                }
+            }
+        }
+
+        .prod7_quiz_card {
+            width: 77.08vw;
+            height: 36vw;
+            border-radius: 12px;
+            background-color: #F8FAFC;
+            border: 1.5px solid #EAEDF2;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .prod7_quiz_left {
+                width: 52vw;
+                height: 36vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .prod7_quiz_left_inner {
+                    width: 45.5vw;
+                    height: 30vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .prod7_quiz_hint {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 0.6vw;
+
+                        img {
+                            width: 1.6vw;
+                            height: 1.6vw;
+                            object-fit: contain;
+                            display: block;
+                        }
+
+                        span {
+                            font-size: 0.85rem;
+                            font-weight: 400;
+                            color: #5D6C7B;
+                            line-height: 130%;
+                        }
+                    }
+
+                    .prod7_question_title {
+                        font-size: 1.85rem;
+                        font-weight: 700;
+                        line-height: 120%;
+                        color: #282739;
+                        text-transform: uppercase;
+                    }
+
+                    .prod7_options_grid {
+                        width: 45.5vw;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        gap: 1vw;
+
+                        .prod7_option {
+                            width: 22.2vw;
+                            height: 4.8vw;
+                            border-radius: 8px;
+                            background-color: #FFFFFF;
+                            border: 1px solid #EAEDF2;
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+                            &:hover {
+                                border-color: #B5B9F6;
+                            }
+
+                            &.prod7_option_active {
+                                border: 1.5px solid #6F73EE;
+                            }
+
+                            .prod7_option_inner {
+                                width: 19.5vw;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 0.8vw;
+
+                                .prod7_radio {
+                                    width: 1.3vw;
+                                    height: 1.3vw;
+                                    border-radius: 50%;
+                                    border: 1.5px solid #D7DCE1;
+                                    flex-shrink: 0;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    .prod7_radio_dot {
+                                        width: 0.65vw;
+                                        height: 0.65vw;
+                                        border-radius: 50%;
+                                        background-color: #6F73EE;
+                                    }
+                                }
+
+                                .prod7_option_label {
+                                    font-size: 0.95rem;
+                                    font-weight: 400;
+                                    color: #282739;
+                                    line-height: 130%;
+                                }
+                            }
+
+                            &.prod7_option_active .prod7_radio {
+                                border-color: #6F73EE;
+                            }
+                        }
+                    }
+
+                    .prod7_nav_row {
+                        width: 45.5vw;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .prod7_progress_block {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.5vw;
+
+                            .prod7_progress_label {
+                                font-size: 0.85rem;
+                                font-weight: 400;
+                                color: #282739;
+                            }
+
+                            .prod7_progress_track {
+                                width: 16vw;
+                                height: 0.4vw;
+                                border-radius: 10px;
+                                background-color: #EAEDF2;
+                                overflow: hidden;
+
+                                .prod7_progress_bar {
+                                    height: 100%;
+                                    border-radius: 10px;
+                                    background-color: #75D142;
+                                    transition: width 0.3s ease;
+                                }
+                            }
+                        }
+
+                        .prod7_buttons {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 0.8vw;
+
+                            .prod7_btn_prev {
+                                width: 3.2vw;
+                                height: 3.2vw;
+                                border-radius: 50%;
+                                border: 1.5px solid #6F73EE;
+                                background-color: #FFFFFF;
+                                color: #6F73EE;
+                                font-size: 1.1rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                transition: all 0.15s ease;
+
+                                &:disabled {
+                                    border-color: #EAEDF2;
+                                    color: #BDC3CD;
+                                    cursor: not-allowed;
+                                }
+
+                                &:not(:disabled):hover {
+                                    background-color: #F4F7FB;
+                                }
+                            }
+
+                            .prod7_btn_next {
+                                width: 7.8vw;
+                                height: 3.2vw;
+                                border-radius: 8px;
+                                background-color: #6F73EE;
+                                color: #FFFFFF;
+                                font-size: 0.95rem;
+                                font-weight: 500;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 0.5vw;
+                                transition: background-color 0.15s ease;
+
+                                &:hover {
+                                    background-color: #5D62E0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .prod7_quiz_right {
+                width: 25.08vw;
+                height: 36vw;
+                border-left: 1.5px solid #EAEDF2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .prod7_quiz_right_inner {
+                    width: 20.8vw;
+                    height: 30vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .prod7_manager_block {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 1vw;
+
+                        .prod7_manager_avatar {
+                            width: 3.8vw;
+                            height: 3.8vw;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            flex-shrink: 0;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                display: block;
+                            }
+                        }
+
+                        .prod7_manager_info {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.2vw;
+
+                            .prod7_manager_name {
+                                font-size: 1.05rem;
+                                font-weight: 600;
+                                color: #282739;
+                            }
+
+                            .prod7_manager_role {
+                                font-size: 0.85rem;
+                                font-weight: 400;
+                                color: #5D6C7B;
+                            }
+                        }
+                    }
+
+                    .prod7_orange_cards {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.9vw;
+
+                        .prod7_orange_card {
+                            width: 20.8vw;
+                            height: 5.4vw;
+                            border-radius: 10px;
+                            background: linear-gradient(90deg, #F9AB3F 0%, #E89823 100%);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .prod7_orange_inner {
+                                width: 18.5vw;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 0.8vw;
+
+                                .prod7_orange_icon_box {
+                                    width: 2.6vw;
+                                    height: 2.6vw;
+                                    flex-shrink: 0;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: contain;
+                                        display: block;
+                                    }
+                                }
+
+                                .prod7_orange_text {
+                                    font-size: 0.82rem;
+                                    font-weight: 400;
+                                    line-height: 130%;
+                                    color: #FFFFFF;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

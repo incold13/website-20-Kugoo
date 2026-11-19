@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.deliv4 {
+    width: 100vw;
+    height: 32vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .deliv4_banner {
+        width: 95vw;
+        height: 26vw;
+        border-radius: 12px;
+        background-color: #F4F7FB;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .deliv4_inner {
+            width: 88vw;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .deliv4_content {
+                width: 50vw;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 1.2vw;
+
+                .deliv4_title {
+                    font-size: 2.25rem;
+                    font-weight: 600;
+                    line-height: 120%;
+                    color: #282739;
+                    text-transform: uppercase;
+                    font-family: "Jost", sans-serif;
+                }
+
+                .deliv4_subtitle {
+                    max-width: 38vw;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 140%;
+                    color: #282739;
+                    font-family: "Jost", sans-serif;
+                }
+
+                .deliv4_form_group {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.8vw;
+
+                    .deliv4_form {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 1.2vw;
+
+                        .deliv4_input {
+                            width: 17vw;
+                            height: 3.6vw;
+                            border-radius: 8px;
+                            border: 1px solid #EAEBED;
+                            background-color: #FFFFFF;
+                            outline: none;
+                            color: #282739;
+                            font-size: 0.95rem;
+                            font-family: "Jost", sans-serif;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+
+                            &::placeholder {
+                                color: #5D6C7B;
+                            }
+                        }
+
+                        .deliv4_btn {
+                            width: 14.5vw;
+                            height: 3.6vw;
+                            border-radius: 8px;
+                            background-color: #6F73EE;
+                            color: #FFFFFF;
+                            font-size: 0.95rem;
+                            font-weight: 500;
+                            font-family: "Jost", sans-serif;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: background-color 0.15s ease;
+
+                            &:hover {
+                                background-color: #5D62E0;
+                            }
+
+                            &:active {
+                                transform: scale(0.99);
+                            }
+                        }
+                    }
+
+                    .deliv4_agree {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 0.7vw;
+                        cursor: pointer;
+                        user-select: none;
+
+                        .deliv4_checkbox {
+                            width: 1.1vw;
+                            height: 1.1vw;
+                            border: 1.5px solid #EAEBED;
+                            border-radius: 4px;
+                            background-color: #FFFFFF;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 0.75rem;
+                            font-weight: 700;
+                            color: #6F73EE;
+                            line-height: 1;
+                            flex-shrink: 0;
+                            transition: border-color 0.15s;
+
+                            &.deliv4_checked {
+                                border-color: #6F73EE;
+                            }
+                        }
+
+                        &:hover {
+                            .deliv4_checkbox {
+                                border-color: #6F73EE;
+                            }
+                        }
+
+                        .deliv4_agree_text {
+                            font-size: 0.78rem;
+                            font-weight: 400;
+                            line-height: 140%;
+                            color: #282739;
+
+                            .deliv4_link {
+                                color: #282739;
+                                text-decoration: underline;
+
+                                &:hover {
+                                    color: #6F73EE;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .deliv4_woman_box {
+                width: 35vw;
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                overflow: hidden;
+
+                .deliv4_woman_img {
+                    height: 100%;
+                    width: auto;
+                    object-fit: contain;
+                    display: block;
+                }
+            }
+        }
+    }
+}

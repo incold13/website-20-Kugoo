@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Photo } from "../../photo.js"
 import "./Footer.scss"
 
@@ -48,16 +49,16 @@ export default function Footer() {
                         <p className="footer_col_title">Покупателям</p>
                         <div className="footer_buyers_subcols">
                             <div className="footer_buyers_col">
-                                <a href="#service" className="footer_link">Сервисный центр</a>
-                                <a href="#delivery" className="footer_link">Доставка и оплата</a>
+                                <Link to="/servise" className="footer_link">Сервисный центр</Link>
+                                <Link to="/delivery" className="footer_link">Доставка и оплата</Link>
                                 <a href="#credit" className="footer_link">Рассрочка</a>
-                                <a href="#testdrive" className="footer_link">Тест-драйв</a>
+                                <Link to="/test" className="footer_link">Тест-драйв</Link>
                             </div>
                             <div className="footer_buyers_col">
                                 <a href="#blog" className="footer_link">Блог</a>
                                 <a href="#coop" className="footer_link">Сотрудничество</a>
                                 <a href="#contacts" className="footer_link">Контакты</a>
-                                <a href="#promos" className="footer_link">Акции</a>
+                                <Link to="/promos" className="footer_link">Акции</Link>
                             </div>
                         </div>
                     </div>

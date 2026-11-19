@@ -6,7 +6,7 @@ import Catalog_sect4 from "./Catalog_sect4/Catalog_sect4.jsx"
 import Catalog_sect5 from "./Catalog_sect5/Catalog_sect5.jsx"
 import Catalog_sect6 from "./Catalog_sect6/Catalog_sect6.jsx"
 
-function Page4() {
+function Page5() {
   const [count, setCount] = useState(0)
 
   return (
@@ -21,4 +21,4 @@ function Page4() {
   )
 }
 
-export default Page4
+export default Page5

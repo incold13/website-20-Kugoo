@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.about3 {
+    width: 100vw;
+    height: 52vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .about3_all {
+        width: 77.08vw;
+        height: 46vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .about3_header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 0.9vw;
+
+            .about3_title {
+                font-size: 2.22rem;
+                font-weight: 600;
+                line-height: 135%;
+                color: #282739;
+                text-transform: uppercase;
+                font-family: "Jost", sans-serif;
+            }
+
+            .about3_subtitle {
+                font-size: 1.11rem;
+                font-weight: 400;
+                line-height: 140%;
+                color: #282739;
+                font-family: "Jost", sans-serif;
+            }
+
+            .about3_tabs {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1.2vw;
+
+                .about3_tab {
+                    width: 11.5vw;
+                    height: 3.2vw;
+                    border: 1.3px solid transparent;
+                    background-color: #F4F7FB;
+                    border-radius: 6px;
+                    font-size: 0.97rem;
+                    font-weight: 400;
+                    color: #5D6C7B;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.2s ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #282739;
+                    }
+
+                    &.about3_tab_active {
+                        border-color: #6F73EE;
+                        background-color: #FFFFFF;
+                        color: #6F73EE;
+                    }
+                }
+            }
+        }
+
+        .about3_grid {
+            width: 77.08vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1.5vw;
+
+            .about3_card {
+                width: 24.69vw;
+                height: 15.2vw;
+                background-color: #FFFFFF;
+                border: 1px solid #EAEDF2;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: box-shadow 0.2s ease, border-color 0.2s ease;
+
+                &:hover {
+                    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+                }
+
+                .about3_card_inner {
+                    width: 20.8vw;
+                    height: 11.4vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+
+                    .about3_card_icon_box {
+                        width: 2.22vw;
+                        height: 2.22vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-shrink: 0;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            display: block;
+                        }
+                    }
+
+                    .about3_card_content {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.55vw;
+
+                        .about3_card_title {
+                            font-size: 1.15rem;
+                            font-weight: 600;
+                            line-height: 130%;
+                            color: #282739;
+                            font-family: "Jost", sans-serif;
+                        }
+
+                        .about3_card_desc {
+                            font-size: 0.92rem;
+                            font-weight: 400;
+                            line-height: 145%;
+                            color: #5D6C7B;
+                            font-family: "Jost", sans-serif;
+                        }
+
+                        .about3_card_link {
+                            font-size: 0.88rem;
+                            font-weight: 400;
+                            line-height: 130%;
+                            color: #6F73EE;
+                            text-decoration: underline;
+                            font-family: "Jost", sans-serif;
+                            cursor: pointer;
+
+                            &:hover {
+                                opacity: 0.85;
+                            }
+                        }
+                    }
+                }
+
+                &.about3_card_promo {
+                    background-color: #F4F7FB;
+                    border: 1px solid #F4F7FB;
+                    position: relative;
+                    overflow: hidden;
+
+                    .about3_promo_inner {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        position: relative;
+
+                        .about3_promo_content {
+                            width: 11vw;
+                            height: 6vw;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            gap: 0.8vw;
+                            position: relative;
+                            z-index: 2;
+                            transform: translateX(1.94vw);
+
+                            .about3_promo_title {
+                                font-size: 1.25rem;
+                                font-weight: 600;
+                                color: #282739;
+                                font-family: "Jost", sans-serif;
+                            }
+
+                            .about3_promo_link {
+                                display: flex;
+                                align-items: center;
+                                gap: 0.5vw;
+                                color: #6F73EE;
+                                font-size: 0.97rem;
+                                font-weight: 500;
+                                cursor: pointer;
+                                transition: gap 0.15s ease;
+
+                                img {
+                                    width: 0.83vw;
+                                    height: auto;
+                                    display: block;
+                                }
+
+                                &:hover {
+                                    gap: 0.75vw;
+                                }
+                            }
+                        }
+
+                        .about3_promo_img_box {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 15vw;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                            z-index: 1;
+                            pointer-events: none;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: right center;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

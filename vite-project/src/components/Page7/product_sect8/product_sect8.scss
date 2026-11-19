@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.prod8 {
+    width: 100vw;
+    height: 48vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+    overflow: hidden;
+
+    .prod8_block {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.2vw;
+
+        .prod8_header {
+            width: 77.08vw;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .prod8_title {
+                font-size: 2.1rem;
+                font-weight: 600;
+                color: #282739;
+                text-transform: uppercase;
+                line-height: 120%;
+                font-family: "Jost", sans-serif;
+            }
+        }
+
+        .prod8_slider {
+            width: 100vw;
+            height: 33.5vw;
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            .prod8_btn_next {
+                position: absolute;
+                left: 86.8vw;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 3.4vw;
+                height: 3.4vw;
+                border-radius: 50%;
+                background-color: #6F73EE;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 10;
+                box-shadow: 0 4px 18px rgba(111, 115, 238, 0.45);
+                cursor: pointer;
+                transition: transform 0.2s ease, background-color 0.2s ease;
+
+                img {
+                    width: 0.9vw;
+                    height: 1.1vw;
+                }
+
+                &:hover {
+                    background-color: #585CE5;
+                    transform: translateY(-50%) scale(1.08);
+                }
+
+                &:active {
+                    transform: translateY(-50%) scale(0.96);
+                }
+            }
+
+            .prod8_track {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1.8vw;
+                transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+                will-change: transform;
+                user-select: none;
+
+                .prod8_card {
+                    width: 18.5vw;
+                    height: 33vw;
+                    border: 1.5px solid #EAEDF2;
+                    border-radius: 10px;
+                    background-color: #FFFFFF;
+                    flex-shrink: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: box-shadow 0.2s ease;
+
+                    &:hover {
+                        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+                    }
+
+                    .prod8_card_inner {
+                        width: 15.8vw;
+                        height: 29.8vw;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .prod8_card_top {
+                            width: 100%;
+                            height: 1.8vw;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .prod8_badge {
+                                width: 5.6vw;
+                                height: 1.8vw;
+                                border-radius: 5px;
+                                background-color: #75D142;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-size: 0.95rem;
+                                font-weight: 500;
+                                color: #FFFFFF;
+                            }
+
+                            .prod8_compare_btn {
+                                width: 1.8vw;
+                                height: 1.8vw;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+
+                                img {
+                                    width: 1.6vw;
+                                    height: 1.6vw;
+                                }
+                            }
+                        }
+
+                        .prod8_card_img_box {
+                            width: 100%;
+                            height: 13.5vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            img {
+                                max-width: 100%;
+                                max-height: 100%;
+                                object-fit: contain;
+                            }
+                        }
+
+                        .prod8_card_info {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.6vw;
+
+                            .prod8_card_title {
+                                font-size: 1.25rem;
+                                font-weight: 600;
+                                color: #282739;
+                                line-height: 125%;
+                                font-family: "Jost", sans-serif;
+                            }
+
+                            .prod8_card_desc {
+                                font-size: 1rem;
+                                font-weight: 400;
+                                color: #5D6C7B;
+                                font-family: "Jost", sans-serif;
+                            }
+                        }
+
+                        .prod8_price_row {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .prod8_price {
+                                font-size: 1.55rem;
+                                font-weight: 700;
+                                color: #282739;
+                                font-family: "Jost", sans-serif;
+                            }
+
+                            .prod8_actions {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 0.6vw;
+
+                                .prod8_action_btn {
+                                    width: 2.8vw;
+                                    height: 2.8vw;
+                                    border: 1.5px solid #EAEDF2;
+                                    border-radius: 50%;
+                                    background-color: #FFFFFF;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    cursor: pointer;
+                                    transition: border-color 0.15s ease;
+
+                                    img {
+                                        width: 1.3vw;
+                                        height: 1.3vw;
+                                    }
+
+                                    &:hover {
+                                        border-color: #6F73EE;
+                                    }
+                                }
+                            }
+                        }
+
+                        .prod8_buy_btn {
+                            width: 100%;
+                            height: 3.2vw;
+                            border-radius: 8px;
+                            background-color: #6F73EE;
+                            color: #FFFFFF;
+                            font-size: 1.05rem;
+                            font-weight: 500;
+                            font-family: "Jost", sans-serif;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            transition: background-color 0.15s ease;
+
+                            &:hover {
+                                background-color: #5D62E0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

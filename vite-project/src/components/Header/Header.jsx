@@ -61,16 +61,16 @@ export default function Header() {
                 </div>
                 <div className="hdr_nav">
                     <div className="hdr_nav_in">
-                        <a className="hdr_nav_link" href="#">О магазине</a>
+                        <Link to="/about"><span className="hdr_nav_link">О магазине</span></Link>
                         <div className="hdr_nav_item">
-                            <a className="hdr_nav_link" href="#">Доставка и оплата</a>
+                            <Link to="/delivery"><span className="hdr_nav_link">Доставка и оплата</span></Link>
                             <p className="hdr_badge">Доступна рассрочка</p>
                         </div>
                         <Link to="/test"><a className="hdr_nav_link" href="#">Тест-драйв</a></Link>
                         <a className="hdr_nav_link" href="#">Блог</a>
                         <a className="hdr_nav_link" href="#">Контакты</a>
                         <div className="hdr_nav_item">
-                            <a className="hdr_nav_link" href="#">Акции</a>
+                            <Link to="/promos" className="hdr_nav_link">Акции</Link>
                             <p className="hdr_badge_round">%</p>
                         </div>
                     </div>

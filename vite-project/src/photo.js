@@ -34,11 +34,11 @@ import widget_manager from "./assets/Widget_manager.png"
 import sect5_photo from "./assets/Sect5_photo.svg"
 import sect5_arrow_white from "./assets/Sect5_arrow_white.svg"
 
-import sect6_basket from "./assets/Sect6_basket.png"
-import sect6_wallet from "./assets/Sect6_wallet.png"
-import sect6_shield from "./assets/Sect6_shield.png"
-import sect6_delivery from "./assets/Sect6_delivery.png"
-import sect6_percent from "./assets/Sect6_percent.png"
+import sect6_basket from "./assets/Sect6_basket.svg"
+import sect6_wallet from "./assets/Sect6_wallet.svg"
+import sect6_shield from "./assets/Sect6_shield.svg"
+import sect6_delivery from "./assets/Sect6_delivery.svg"
+import sect6_percent from "./assets/Sect6_percent.svg"
 import sect6_card6 from "./assets/Sect6_card6.png"
 
 import sect7_banner from "./assets/Sect7_banner.png"
@@ -149,8 +149,90 @@ import test2_img2 from "./assets/Test2_img2.svg"
 import test3_woman from "./assets/Test3_woman.svg"
 import catalog1_home from "./assets/Catalog1_home.svg"
 import catalog1_bg from "./assets/Catalog1_bg.svg"
+import catalog_prod1_bg from "./assets/catalog1_prod_bg.svg"
+import catalog_prod3_scot from "./assets/catalog_prod3_scot.svg"
+import cat_prod3_quiz from "./assets/cat_prod3_quiz.png"
+import cat_prod3_manager from "./assets/cat_prod3_manager.svg"
+import cat_prod3_scooter_mini from "./assets/cat_prod3_scooter_mini.svg"
+import prod2_manual from "./assets/prod2_manual.svg"
+import prod2_charger from "./assets/prod2_charger.svg"
+import prod2_bag from "./assets/prod2_bag.svg"
+import prod2_warranty from "./assets/prod2_warranty.svg"
+import product_sect2_1 from "./assets/product_sect2_1.svg"
+import product_sect2_2 from "./assets/product_sect2_2.svg"
+import product_sect2_3 from "./assets/product_sect2_3.svg"
+import product_sect2_4 from "./assets/product_sect2_4.svg"
+import product_sect3 from "./assets/product_sect3.svg"
+import product_sect6_item from "./assets/product_sect6_item.png"
+import product_sect7_bonus1 from "./assets/product_sect7_bonus1.svg"
+import product_sect7_bonus2 from "./assets/product_sect7_bonus2.svg"
+import product_sect7_icon from "./assets/product_sect7_icon.svg"
+import product_sect7_manager from "./assets/product_sect7_manager.svg"
+import product_sect7_orange1 from "./assets/product_sect7_orange1.svg"
+import product_sect7_orange2 from "./assets/product_sect7_orange2.svg"
+import about_sect1_banner from "./assets/about_sect1_banner.svg"
+import about_sect2_cert from "./assets/about_sect2_cert.png"
+import about_sect4_bg from "./assets/about_sect4_bg.svg"
+import deliv3_phone from "./assets/deliv3_phone.png"
+import deliv4_woman from "./assets/deliv4_woman.png"
 
+import prod1_thumb1 from "./assets/prod1_thumb1.svg"
+import prod1_thumb2 from "./assets/prod1_thumb2.png"
+import prod1_thumb3 from "./assets/prod1_thumb3.png"
+import prod1_thumb4 from "./assets/prod1_thumb4.png"
+import prod1_thumb5 from "./assets/prod1_thumb5.png"
+import prod1_thumb6 from "./assets/prod1_thumb6.png"
+import prod1_thumb7 from "./assets/prod1_thumb7.png"
+import prod1_thumb8 from "./assets/prod1_thumb8.png"
+import prod1_thumb9 from "./assets/prod1_thumb9.png"
+import prod1_thumb10 from "./assets/prod1_thumb10.png"
+import prod1_thumb11 from "./assets/prod1_thumb11.png"
+import product_sect1_card from "./assets/product_sect1_card.svg"
+import product_sect1_delivery from "./assets/product_sect1_delivery.svg"
+import product_sect1_podar1 from "./assets/product_sect1_podar1.svg"
+import product_sect1_podar2 from "./assets/product_sect1_podar2.svg"
+import product_sect1_podelit from "./assets/product_sect1_podelit.svg"
+import product_sect1_ves from "./assets/product_sect1_ves.svg"
+import promo_sect1_banner from "./assets/promo1_clean_bg.png"
+import promo_sect1_banner_full from "./assets/promo_sect1_banner_full.png"
 export const Photo = {
+    product_sect1_card: product_sect1_card,
+    product_sect1_delivery: product_sect1_delivery,
+    product_sect1_podar1: product_sect1_podar1,
+    product_sect1_podar2: product_sect1_podar2,
+    product_sect1_podelit: product_sect1_podelit,
+    product_sect1_ves: product_sect1_ves,
+
+    prod1_scooter: prod1_thumb1,
+    prod1_thumb1: prod1_thumb1,
+    prod1_thumb2: prod1_thumb2,
+    prod1_thumb3: prod1_thumb3,
+    prod1_thumb4: prod1_thumb4,
+    prod1_thumb5: prod1_thumb5,
+    prod1_thumb6: prod1_thumb6,
+    prod1_thumb7: prod1_thumb7,
+    prod1_thumb8: prod1_thumb8,
+    prod1_thumb9: prod1_thumb9,
+    prod1_thumb10: prod1_thumb10,
+    prod1_thumb11: prod1_thumb11,
+
+    prod2_manual: prod2_manual,
+    prod2_charger: prod2_charger,
+    prod2_bag: prod2_bag,
+    prod2_warranty: prod2_warranty,
+    product_sect6_item: product_sect6_item,
+    product_sect7_bonus1: product_sect7_bonus1,
+    product_sect7_bonus2: product_sect7_bonus2,
+    product_sect7_icon: product_sect7_icon,
+    product_sect7_manager: product_sect7_manager,
+    product_sect7_orange1: product_sect7_orange1,
+    product_sect7_orange2: product_sect7_orange2,
+    product_sect2_1: product_sect2_1,
+    product_sect2_2: product_sect2_2,
+    product_sect2_3: product_sect2_3,
+    product_sect2_4: product_sect2_4,
+    product_sect3: product_sect3,
+    catalog_prod1_bg:catalog_prod1_bg,
     catalog1_home: catalog1_home,
     catalog1_bg: catalog1_bg,
     test3_woman: test3_woman,
@@ -297,4 +379,15 @@ export const Photo = {
     appstore:appstore,
     serv1_banner: serv1_banner,
     map_serv_sect1:map_serv_sect1,
+    catalog_prod3_scot: catalog_prod3_scot,
+    cat_prod3_quiz: cat_prod3_quiz,
+    cat_prod3_manager: cat_prod3_manager,
+    cat_prod3_scooter_mini: cat_prod3_scooter_mini,
+    about_sect1_banner: about_sect1_banner,
+    about_sect2_cert: about_sect2_cert,
+    about_sect4_bg: about_sect4_bg,
+    deliv3_phone: deliv3_phone,
+    deliv4_woman: deliv4_woman,
+    promo_sect1_banner: promo_sect1_banner,
+    promo_sect1_banner_full: promo_sect1_banner_full,
 }

@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.catalog_prod1 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+
+    .catalog_prod1_spacer_top {
+        height: 1.5vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .catalog_prod1_breadcrumbs_wrap {
+        width: 95vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .catalog_prod1_breadcrumbs_spacer {
+            width: 0.5vw;
+            height: 100%;
+            flex-shrink: 0;
+        }
+
+        .catalog_prod1_breadcrumbs {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.5vw;
+
+            .catalog_prod1_home_box {
+                width: 0.9vw;
+                height: 0.9vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .catalog_prod1_bc_link {
+                font-size: 0.85rem;
+                color: #5D6C7B;
+            }
+
+            .catalog_prod1_bc_slash {
+                font-size: 0.85rem;
+                color: #5D6C7B;
+            }
+
+            .catalog_prod1_bc_current {
+                font-size: 0.85rem;
+                color: #282739;
+            }
+        }
+    }
+
+    .catalog_prod1_spacer_middle {
+        height: 1.2vw;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .catalog_prod1_all {
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .catalog_prod1_banner {
+            background-image: url(../../../assets/catalog1_prod_bg.svg);
+            width: 95vw;
+            height: 14vw;
+            border-radius: 12px;
+            background-color: #6F73EE;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .catalog_prod1_content {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                width: 48vw;
+
+                .catalog_prod1_title {
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    line-height: 120%;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
